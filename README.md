@@ -38,9 +38,14 @@ Copy all included files to your server.  Modify the functions.php - adding your 
 
 You should be all set to run the examples!
 
-## Running the tests
+## Files included
 
 There are 4 basic tests to this project.  convertMobile.php & convertBrowser.php prepares the text with standardized emoji placeholders and saves it to the database.  pushMobile.php & pushBrowser.php prepares the stored database text to be displayed on a mobile app or web browser.
+
+### functions.php
+
+This file contains database connection routines.  You should modify the database variables to match your database login.  This also contains a few utility functions needed for these examples.
+
 
 ### convertMobile.php
 
