@@ -59,7 +59,7 @@ Returns a JSON result with the converted string, how many emoji records were sea
 
 ### convertBrowser.php
 
-This is an example where Emoji image tags from a browser output string are replaced with a placeholder that reflects the emoji.  
+This is an example where Emoji image tags from a browser output string are replaced with a placeholder that reflects the emoji. This example requires emoji image tags to include an id attribute that matches the emoji.  Example: <img id="U+1F604" src="1f604.png"> The energy of an electric eel. <img id="U+1F604 src="1f604.png">.  These can easily be generated from the information provided in the emoji database supplied with this example.
 
 ```
 Returns a JSON result with the converted string.  (Note: This message result will be identical to the result achieved converting from a mobile app output string above).
