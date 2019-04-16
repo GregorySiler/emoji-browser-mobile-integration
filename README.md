@@ -2,7 +2,7 @@
 
 This project is an attempt to create a system that feeds text with emoji data to both web browsers and mobile apps.  In this scenerio, we have a website that allows members to post messages that contain emoji image files.  We've also built a mobile app interface where members can post messages that contain mobile emoji codes.  The problem is that the 2 systems aren't compatible with each others emojis.  Our goal is to save these messages to our database using a placeholder code that cooresponds to an emoji, and when the message is served back to the mobile or browser device, the placeholder is replaced with the mobile emoji code or emoji image (depending on which interface is being served).
 
-To keep things unified, placeholders and image files use the Emoji Code Point values.  😄 has a Code Point of U+!F604, so the cooresponding image file would be 1f604.png and the emoji placeholder will be :{U+1F604}:.  The database supplied doesn't include image files for each emoji, but it does contain the base64 "data:image/png" data.  You can create your own image files from this data if you want - or just use the data directly from the database as your image tag source.  
+To keep things unified, placeholders and image files use the Emoji Code Point values.  😄 has a Code Point of U+!1F604, so the cooresponding image file would be 1f604.png and the emoji placeholder will be :{U+1F604}:.  The database supplied doesn't include image files for each emoji, but it does contain the base64 "data:image/png" data.  You can create your own image files from this data if you want - or just use the data directly from the database as your image tag source.  
 
 ## Getting Started
 
