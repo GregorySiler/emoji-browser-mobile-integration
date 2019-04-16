@@ -47,7 +47,9 @@ There are 4 basic tests to this project.  convertMobile.php & convertBrowser.php
 This is an example where Emoji codes from a mobile app output string are replaced with a placeholder that reflects the emoji.  
 
 ```
-Give an example
+Returns a JSON result with the converted string, how many emoji records were searched in the database, and how many emojis were replaced in the string (this would be unique emojies, not total emojis).  
+
+{ "error": false, "message": ":{U+1F604}: The energy of an electric eel. :{U+1F604}:", "searched": 3016, "replaced": 1 }
 ```
 
 ### convertBrowser.php
@@ -55,7 +57,9 @@ Give an example
 This is an example where Emoji image tags from a browser output string are replaced with a placeholder that reflects the emoji.  
 
 ```
-Give an example
+Returns a JSON result with the converted string.  (Note: This message result will be identical to the result achieved converting from a mobile app output string above).
+
+{ "error": false, "message": ":{U+1F604}: The energy of an electric eel. :{}:" }
 ```
 
 ### pushMobile.php
@@ -63,7 +67,9 @@ Give an example
 In this example, the saved output string (containing emoji placeholders) is processed and all placeholders are replaced with their cooresponding mobile emoji codes - rendering it correctly on mobile devices.
 
 ```
-Give an example
+Returns a JSON result with the mobile emoji codes - ready to send to a mobile app.
+
+{ "error": false, "message": "\ud83d\udc06 The energy of an electric eel. \ud83d\udc06" }
 ```
 
 ### pushBrowser.php
@@ -71,7 +77,9 @@ Give an example
 In this example, the saved output string is processed and all placeholders are replaced with their cooresponding image tags - rendering it correctly on browsers.
 
 ```
-Give an example
+Returns a JSON result with the browser emoji image tags - ready to send to a browser interface.
+
+{ "error": false, "message": "<img src="1f406.png"> The energy of an electric eel. <img src="1f406.png">" }
 ```
 
 
