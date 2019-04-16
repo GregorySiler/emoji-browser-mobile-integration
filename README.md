@@ -75,9 +75,9 @@ Give an example
 ```
 
 
-## Deployment
+## Disclaimer
 
-Nothing additional
+I am not a programmer, I'm a hobbiest. This code has not been 'massaged' or tested for perfection or error processing.  The examples work, and my system implements this logic.  This is just a down and dirty way to get the job done.  Any suggestions and improvements are greatly welcome.  I'm still learning. 
 
 ## Authors
 
